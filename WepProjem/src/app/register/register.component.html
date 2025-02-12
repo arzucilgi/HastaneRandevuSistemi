@@ -1,0 +1,63 @@
+<div class="loginComponent">
+  <div class="registerDiv">
+      <div class="input-register">
+        <input type="text" id="tcKimlik" [(ngModel)]="tcKimlikNo" name="tcKimlik" placeholder="Tc Kimlik Numarası" required
+        pattern="[0-9]*"
+        maxlength="11"
+        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+      </div>
+      
+      <div class="input-register">
+        <input type="text" id="name" [(ngModel)]="name" placeholder="İsim " required>
+      </div>
+    
+      <div class="input-register">
+        <input type="text" id="surname" [(ngModel)]="surname" placeholder="Soyisim" required>
+      </div>
+    
+      <div class="input-register">
+        <select id="cinsiyet" [(ngModel)]="cinsiyet"  required>
+          <option value="" disabled selected>Cinsiyet Seçiniz</option>
+          <option value="Erkek">Erkek</option>
+          <option value="Kadın">Kadın</option>     
+        </select>
+      </div>
+    
+      <div class="input-register">
+        <input type="text" id="anneName" [(ngModel)]="anneName"placeholder="Anne Adı" required>
+      </div>
+    
+      <div class="input-register">
+        <input type="text" id="babaName" [(ngModel)]="babaName" placeholder="Baba Adı" required>
+      </div>
+    
+      <div class="input-register">
+        <input type="text" id="dogumYeri" [(ngModel)]="dogumYeri" placeholder="Doğum Yeri" required>
+      </div>
+    
+      <div class="input-register">
+        <input type="date" id="dogumTarihi" [(ngModel)]="dogumTarihi" required>
+      </div>
+    
+      <div class="input-register">
+        <input type="text" id="telefon" [(ngModel)]="telefon" placeholder="Telefon" required
+        pattern="[0-9]*"
+        maxlength="11"
+        oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+      </div>
+    
+      <div class="input-register">
+        <input type="password" id="sifre" [(ngModel)]="sifre" placeholder="Sifre" required>
+      </div>
+    
+      <div class="input-register">
+        <label for="">Admin misin?</label>
+        <input type="checkbox"  [(ngModel)]="isAdmin" placeholder="Yönetici misin Hasta mısın?" required>
+      </div>
+    
+      <button class="button" type="submit" (click)="uyeOl($event)">Üye Ol</button>
+
+    
+
+  </div>
+</div>

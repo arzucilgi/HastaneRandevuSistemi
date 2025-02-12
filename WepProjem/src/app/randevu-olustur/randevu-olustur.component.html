@@ -1,0 +1,48 @@
+
+<div class="randevuContainer">
+    <div class="selectContainer">
+       <!-- <label for="Poliklinik">Sehir Seçin</label> -->
+       <select id="city" [(ngModel)]="secilenSehir" (ngModelChange)="getHastaneler()">
+           <option value="" disabled selected>Sehir seçiniz</option>
+           @for(sehir of sehirler; track $index){
+               <option [value]="sehir.sehirName">{{ sehir.sehirName }}</option>
+           } 
+       </select>
+     </div >
+    
+       <div class="selectContainer">
+               <!-- <label for="Poliklinik">Hastane Seçin</label> -->
+               <select  [(ngModel)]="secilenHastane" (change)="getPoliklinikler()" [disabled]="hastaneler.length === 0">
+                   <option value="" disabled selected>Hastane seçiniz</option>
+                   @for(hastane of hastaneler; track $index){
+                           <option [value]="hastane.hastaneName">{{ hastane.hastaneName }}</option>
+                   }
+               </select>
+       </div>
+     
+     
+       <div class="selectContainer">
+           <!-- <label for="Poliklinik">Poliklinik Seçin</label> -->
+               <select  [(ngModel)]="secilenPoliklinik" (change)="getDoktorlar()" [disabled]="poliklinikler.length === 0">
+                   <option value="" disabled selected>Poliklinik seçiniz</option>
+                   @for(poliklinik of poliklinikler; track $index){
+                       <option [value]="poliklinik.poliklinikName">{{ poliklinik.poliklinikName }}</option>
+                   }
+               </select>
+       </div>
+     
+    
+       <div class="selectContainer">
+           <!-- <label for="Poliklinik">Doktor Seçin:</label> -->
+               <select  [(ngModel)]="secilenDoktor" [disabled]="doktorlar.length === 0" >
+                   <option value="" disabled selected>Doktor seçiniz</option>
+               @for(doktor of doktorlar; track $index){
+                   <option [value]="doktor.doktorName+' '+ doktor.doktorSurname ">{{ doktor.doktorName}}-{{doktor.doktorSurname  }}</option>
+               }
+               </select>
+       </div>
+       <div class="selectContainer">
+            <button (click)="randevuOlustur()">Randevu Oluştur</button>
+       </div>
+     
+</div>

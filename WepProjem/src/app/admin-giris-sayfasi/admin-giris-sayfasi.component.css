@@ -1,0 +1,73 @@
+.loginComponentAdmin{
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(146, 146, 146);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 223, 205);
+    border-radius: 20px;
+}
+.eklenenElemanlarDiv{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    margin: 20px;
+    border: 2px solid gray;
+}
+.loginComponentAdmin input{
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.loginComponentAdmin button{
+    border: 2px solid gray;
+    border-radius: 10px;
+    height: 30px;
+    color: rgb(6, 78, 6);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.loginComponentAdmin button:hover{
+    background-color: rgb(158, 213, 158);
+}
+.loginComponentAdmin h4{
+    color: rgb(14, 72, 14);
+    margin:-5px;
+}
+.cikisYap{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    background-color: gainsboro;
+    margin: 20px;
+    border: 2px solid gray;
+
+}
+.cikisYap button{
+    width: 200px;
+     height: 35px;
+     margin-right: 30px;
+     color: rgb(6, 78, 6);
+     font-size: medium;
+     font-weight: bold;
+}
+.eklenenElemanlarDiv input:focus {
+    border: 2px solid rgb(146, 146, 146); /* Mavi çerçeve */
+    box-shadow: 0 2px 15px rgba(39, 111, 12, 0.79); /* Hafif bir ışık efekti */
+  }

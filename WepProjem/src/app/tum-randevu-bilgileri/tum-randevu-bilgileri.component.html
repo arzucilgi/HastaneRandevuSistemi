@@ -1,0 +1,34 @@
+
+<table class="table">
+    <thead class="thead">
+      <tr  class="table-success">
+        <th scope="col"># </th>
+        <th scope="col">Tc Kimlik </th>
+        <th scope="col">Hasta Adı</th>
+        <th scope="col">Hasta Soyadı</th>
+        <th scope="col">İletişim Bilgileri</th>
+        <th scope="col">Şehir</th>
+        <th scope="col">Hastane</th>
+        <th scope="col">Poliklinik</th>
+        <th scope="col">Doktor Adı</th>
+        <th scope="col">Randevu Sil</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(randevu of randevular ; track $index){
+        <tr >
+          <td>{{$index+1}}</td>
+          <td>{{ randevu.kullanici.tcKimlikNo }}</td>
+          <td>{{ randevu.kullanici.name }}</td>
+          <td>{{ randevu.kullanici.surname }}</td>
+          <td>{{ randevu.kullanici.telefon }}</td>
+          <td>{{randevu.sehir.sehirName }}</td>
+          <td>{{randevu.hastane.hastaneName }}</td>
+          <td>{{ randevu.poliklinik.poliklinikName  }}</td>
+          <td>{{ randevu.doktor.doktorName }}-{{randevu.doktor.doktorSurname}}</td>
+          <td><button style="color: red;" (click)="randevuSil(randevu.id)">Sil</button ></td>
+        </tr>
+      }
+     
+    </tbody>
+  </table>

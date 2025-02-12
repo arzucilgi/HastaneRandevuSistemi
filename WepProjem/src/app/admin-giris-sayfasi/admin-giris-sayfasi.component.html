@@ -1,0 +1,33 @@
+<div class="loginComponentAdmin" >
+    <div class="cikisYap" >
+        <button (click)="cikisYap()">Çıkış Yap
+
+        </button></div>
+    <h4>Şehir Ekle</h4>
+    <div class="eklenenElemanlarDiv">
+          <input type="text" [(ngModel)]="eklenenSehirName" placeholder="Şehir ekle" >
+          <button (click)="sehirEkle()">Sehir Ekle</button>
+    </div>
+    <h4>Hastane Ekle </h4>
+    <div class="eklenenElemanlarDiv">
+         <input type="text" [(ngModel)]="eklenenHastaneName" placeholder="Hastane ismi?" required>
+         <input type="number" [(ngModel)]="eklenenHastaneSehirId" placeholder="Hangi Şehirde(sehirID)?" required>
+         <button (click)="hastaneEkle()">Hastane Ekle</button>
+    </div>
+    <h4>Poliklinik ekle </h4>
+    <div class="eklenenElemanlarDiv">
+        <input type="text" [(ngModel)]="eklenenPoliklinikName" placeholder="Poliklinik ismi?" required>
+        <input type="number" [(ngModel)]="eklenenPoliklinikHastaneId" placeholder="Hangi Hastane(hastaneID)?" required>
+        <button (click)="poliklinikEkle()">Poliklinik Ekle</button>
+
+    </div>
+    <h4>Doktor Ekle</h4>
+    <div class="eklenenElemanlarDiv">
+        <input type="text" [(ngModel)]="eklenenDoktorName" placeholder="Doktor ismi?" required>
+        <input type="text" [(ngModel)]="eklenenDoktorSurname" placeholder="Doktor Soyismi?" required>
+        <input type="number" [(ngModel)]="eklenenDoktorPoliklinikId" placeholder="Hangi Poliklinik(poliklinikID)" required>
+        <button (click)="doktorkEkle()">Doktor Ekle</button>
+
+    </div>
+</div>
+
