@@ -1,0 +1,6 @@
+@WebProjemDotnet_HostAddress = http://localhost:5153
+
+GET {{WebProjemDotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

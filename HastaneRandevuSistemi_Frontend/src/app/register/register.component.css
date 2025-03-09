@@ -1,0 +1,59 @@
+.registerDiv{
+    width: 400px ;
+    height: 500px;
+    border: 2px solid rgb(146, 146, 146);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+}
+
+
+.input-register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+  
+  .input-register label {
+    font-weight: bold;
+  }
+  
+  .input-register input,
+  .input-register select {
+        width: 80%;
+        height: 30px;
+        border: 2px solid rgb(146, 146, 146);
+        border-radius: 5px;
+        padding: 0;
+        text-align: center;
+    }
+  
+  
+  .input-register input[type="checkbox"] {
+    width: auto;
+    margin-top: 5px;
+  }
+
+  .input-register input:focus {
+    border: 2px solid rgb(146, 146, 146); /* Mavi çerçeve */
+    box-shadow: 0 2px 15px rgba(13, 70, 146, 0.79); /* Hafif bir ışık efekti */
+  }
+  .button{
+    width: 80%;
+    height: 40px;
+    border: 2px solid rgb(146, 146, 146);
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color:rgb(210, 210, 215) ;
+    font-size:large;
+  }
+  .button:hover{
+    background-color: rgba(39, 42, 46, 0.5);
+  }

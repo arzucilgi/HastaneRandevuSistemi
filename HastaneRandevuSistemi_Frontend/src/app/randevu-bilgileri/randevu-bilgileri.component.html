@@ -1,0 +1,49 @@
+
+  <div class="container mt-5" >
+    <table class="table table-bordered" style="width: 700px;" >
+      <thead>
+        <tr  class="table-success">
+            <th colspan="2">Randevu Bilgileri</th>
+        </tr>
+        <tr>
+            <th scope="col">Tc Kimlik Numarası</th>
+            <td>{{kullaniciBilgileri.tcKimlikNo}}</td>
+        </tr>
+        <tr>
+            <th scope="col">Hasta Adı</th>
+            <td>{{kullaniciBilgileri.name}}</td>
+        </tr>
+        <tr>
+            <th scope="col">Hasta Soyadı</th>
+            <td>
+                {{kullaniciBilgileri.surname}}
+            </td>
+        </tr>
+        <tr>
+            <th scope="col">İletişim Bilgileri</th>
+            <td>
+                {{kullaniciBilgileri.telefon}}
+            </td>
+        </tr>
+        <tr>
+            <th scope="col">Şehir</th>
+            <td>{{secilenSehir}}</td>
+        </tr>
+        <tr>
+            <th scope="col"> Hastane</th>
+            <td>{{secilenHastane}}</td>
+
+        </tr>
+        <tr>
+            <th scope="col">Poliklinik</th>
+            <td>{{secilenPoliklinik}}</td>
+
+        </tr>
+        <tr>
+            <th scope="col">Doktor Adı</th>
+            <td>{{secilenDoktor}}</td>
+
+        </tr>
+      </thead>
+    </table>
+    
